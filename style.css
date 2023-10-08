@@ -1,0 +1,138 @@
+:root {
+--darkcyan: hsl(185, 75%, 39%);
+--verydarkdesaturated-blue: hsl(229, 23%, 23%);
+--dark-grayishblue: hsl(227, 10%, 46%);
+
+--darkgray: hsl(0, 0%, 59%);
+
+/*Fontsize name and stats): 18px*/
+}
+
+* {
+  margin: 0;
+  padding: 0;   
+  box-sizing: border-box;
+    
+}
+body {
+line-height: 1.8; /*Abstand zwischen den Texten*/
+font-family: Arial, Helvetica, sans-serif;
+background-image: url(./images/bg-pattern-top.svg), 
+    url(./images/bg-pattern-bottom.svg);
+background-repeat: no-repeat;
+  
+background-color: var(--darkcyan); /*Hintergrund*/
+display: flex;
+justify-content: center;
+align-items:center;
+font-size: 18px;
+}
+.container {
+  height: 100%;
+  width: 100vh;
+  /*Abstand von oben*/
+  padding: 50px;
+  
+  /*der container wird in die mitte geschoben (zentriert)*/
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: white; /*hintergrund weiss*/
+  
+  /*Abrunden unten links und rechts*/
+  border-radius: 10px 10px;
+}
+.background-card img{
+  width: 50vh;
+  
+  /*Abrunden oben links und rechts*/
+  border-radius: 10px 10px 0px 0px;
+}
+.background-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.picture img {
+  border-radius: 100%;
+  /*weisser Rahmen um das Bild von Victor*/
+  border: 10px solid white; 
+  height: 200px;
+
+  /*bild nach oben halb in den eingefärbten rahmen*/
+  position: relative;
+  bottom: 10px;
+}
+.picture {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  margin-top: -4rem; /*bild geht in tütkisfarben über*/
+}
+img {
+  margin-bottom: -50px;
+}
+
+ul {
+  list-style: none;
+}
+
+/*unterer teil*/
+.container article{
+  position: relative;
+}
+.container article {
+  text-align: center;
+  margin-top: 3rem;
+}
+.container  h1 {
+  color: var(--verydarkdesaturated-blue);
+  
+}
+.container article span {
+  font-weight: 400;
+  color: var(--dark-grayishblue);
+}
+/*London*/
+.container article p {
+  color: var(--dark-grayishblue);
+}
+/*grauer trenstrich*/
+.container ul {
+  border-top: 1px solid hsl(227, 10%, 46%, 0.2);
+  padding: 5rem;
+  margin: -2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container article ul li {
+  font-weight: 700;
+  color:var(--verydarkdesaturated-blue);
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
+  margin-top: -5rem;
+  
+}
+.container article ul li span {
+  display: block;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--dark-grayishblue);
+  letter-spacing: 0.15rem;
+}
+.attribution { 
+    margin: -80px;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
